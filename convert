@@ -1,0 +1,7 @@
+function convert(input) {
+  return input.split(' ').map(function(letter, index){
+      let abcd = 'abcdefghijklmnopqrstuvwxyz';
+      return letter = abcd[letter-1];
+  }).join('');
+}
+console.log(convert('9 18 4 1'));
